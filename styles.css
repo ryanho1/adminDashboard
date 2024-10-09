@@ -13,6 +13,16 @@ img{
     margin-right: 8px;
 }
 
+input, button{
+    border: 0
+}
+
+input{
+    width: 800px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -32,16 +42,43 @@ img{
 .header, .header2{
     background-color: white;
     grid-column: 2 / 4;
+    align-items: center;
+    display: grid;
+}
+
+.header p {
+    font-weight: bolder;
+}
+
+.searchbar{
+    margin-left: 4rem;
 }
 
 .header{
     grid-row: 1 / 2;
     background-color: rgb(247, 77, 247);
+    grid-template-columns: 5fr 100px 1fr;
 }
 
 .header2{
     grid-row: 2 / 3;
     background-color: pink;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.header2 div img{
+    margin-left: 4rem;
+}
+
+.actions ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 150px));
+    justify-content: center;
+}
+
+.actions ul button{
+    border-radius: 10px;
+    width: 100px;
 }
 
 .main-content{
