@@ -120,7 +120,7 @@ input{
 
 .title{
     font-weight: bolder;
-    font-size: +4;
+    font-size: 20px;
 }
 
 .main-content b, .card{
@@ -130,6 +130,15 @@ input{
 .announcements{
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+}
+
+.announcementcards ul{
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.announcementcards ul li p.title{
+    color: black;
 }
 
 .trendy{
@@ -142,5 +151,19 @@ input{
     margin-bottom: 50px;
     color: white;
     font-size: 30px;
+}
+
+.cardcontainer{
+    background-color: rgb(180, 48, 48);
+    position: relative;
+    right: 38px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.trending{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
 }
 
