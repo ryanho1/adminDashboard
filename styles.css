@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+}
+
 ul, li, a{
     list-style-type: none;
     text-decoration: none;
@@ -103,8 +109,8 @@ input{
     border-left: solid yellow;
     margin-top: 35px;
     background-color: white;
-    height: 300px;
-    width: 480px;
+    width: 90%;
+    border-radius: 14px;
 }
 
 .card ul img{
@@ -154,7 +160,7 @@ input{
 }
 
 .cardcontainer{
-    background-color: rgb(180, 48, 48);
+    background-color: rgb(214, 214, 214);
     position: relative;
     right: 38px;
     padding: 10px;
@@ -162,6 +168,7 @@ input{
 }
 
 .trending{
+    background-color: rgb(214, 214, 214);
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
