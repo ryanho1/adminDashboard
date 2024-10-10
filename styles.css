@@ -45,16 +45,6 @@ input{
     max-width: 45px;
     height: auto;
 }
-/* .sidebar ul li {
-    display: grid;
-    grid-template-columns: 60px 100px; */
-    /* align-items: center; */
-/* } */
-
-/* .home, .profile{
-    display: grid;
-    grid-template-columns: 50px min-content;
-} */
 
  .Dashboard, .home, .profile, .messages, .history, .tasks, .community, .settings, .privacy, .support{
     align-items: center;
@@ -76,6 +66,11 @@ img[src='view-dashboard-variant.svg'] {
     margin-top: 100px;
 }
 
+img[src="search-web.svg"], img[src='bell-ring-outline.svg']{
+    max-width: 50px; 
+    height: auto;
+}
+
 .header, .header2{
     background-color: white;
     grid-column: 2 / 4;
@@ -89,6 +84,22 @@ img[src='view-dashboard-variant.svg'] {
 
 .searchbar{
     margin-left: 4rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 60px min-content;
+}
+
+.searchbar input{
+    height: 30px;
+    border-radius: 20px;
+}
+
+.profileicons{
+    grid-template-columns: 70px min-content min-content;
+    justify-content: space-evenly;
+    display: grid;
+    gap: 30px;
+    align-items: center;
 }
 
 .header{
@@ -106,15 +117,26 @@ img[src='view-dashboard-variant.svg'] {
     margin-left: 4rem;
 }
 
+.namebox div p{
+    font-size: 18px;
+}
+
 .actions ul {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 150px));
     justify-content: center;
+    gap: 20px;
+    justify-content: space-evenly;
 }
 
 .actions ul button{
-    border-radius: 10px;
-    width: 100px;
+    border-radius: 50px;
+    background-color: #0284c7;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 2rem;
+    width: 125px
 }
 
 .main-content,.trendy,.announcements{
@@ -218,6 +240,12 @@ img[src='view-dashboard-variant.svg'] {
 
 img[src="Warcat.jpg"] {
     max-width: 100px;
+    height: auto;
+    border-radius: 300px;
+}
+
+img[src='Warcat copy.jpg']{
+    max-width: 65px;
     height: auto;
     border-radius: 300px;
 }
