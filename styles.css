@@ -42,10 +42,9 @@ input{
 }
 
 .sidebar ul li img {
-    max-width: 35px;
+    max-width: 45px;
     height: auto;
 }
-
 /* .sidebar ul li {
     display: grid;
     grid-template-columns: 60px 100px; */
@@ -57,8 +56,15 @@ input{
     grid-template-columns: 50px min-content;
 } */
 
-.home{
+ .Dashboard, .home, .profile, .messages, .history, .tasks, .community, .settings, .privacy, .support{
     align-items: center;
+    display: grid;
+    grid-template-columns: 60px min-content;
+    margin-bottom: 12px;
+}
+
+.Dashboard{
+    margin-bottom: 2rem;
 }
 
 img[src='view-dashboard-variant.svg'] {
@@ -186,7 +192,7 @@ img[src='view-dashboard-variant.svg'] {
 }
 
 .logo{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     color: white;
     font-size: 30px;
 }
